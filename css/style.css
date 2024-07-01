@@ -36,6 +36,7 @@
     - 404
     - images
     - page transitions
+    - milestones
 
 
 --------------------------------------------*/
@@ -424,7 +425,7 @@ a {
   display: block;
   margin-bottom: 60px;
 }
-.mil-suptitle:before {
+/* .mil-suptitle:before {
   content: "";
   position: absolute;
   right: calc(100% + 30px);
@@ -433,9 +434,9 @@ a {
   height: 1px;
   background-color: rgb(255, 255, 255);
   opacity: 0.2;
-}
+} */
 .mil-suptitle.mil-suptitle-right {
-  text-align: right;
+  text-align: center;
 }
 .mil-suptitle.mil-suptitle-right:before {
   left: calc(100% + 30px);
@@ -4076,21 +4077,27 @@ images
   left: 0;
   width: 100%;
   height: 100%;
+  transform: scale(0.5);
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
      transition: all ease-out 1s;
 }
+
 .image-full > img{
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+  object-fit: none;
   -o-object-position: center;
   object-position: center;
   transition: none;
+  transform: scale(1);
+  background-color: rgb(255, 152, 0);
 }
 .mil-image-frame.mil-horizontal {
   padding-bottom: 65%;
@@ -4141,7 +4148,7 @@ images
   z-index: 2;
 }
 .mil-image-frame:hover img{
-  transform: scale(1.1);
+  transform: scale(0.6);
 }
 .image-full:hover img{
   transform: none;
@@ -4234,4 +4241,189 @@ html.is-animating .mil-menu-frame {
   opacity: 0;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
+}
+
+/*****************************
+
+Milestones
+
+*****************************/
+
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: black;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.timeline-left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.timeline-right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.timeline-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(255, 152, 0);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(255, 152, 0);
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(255, 152, 0);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(255, 152, 0) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline-right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: rgb(255, 152, 0);
+  position: relative;
+  border-radius: 6px;
+  color: black;
+}
+/* .timeline-content h2{
+  color: white;
+} */
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid rgb(255, 152, 0);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(255, 152, 0) transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .timeline-left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .timeline-right {
+    left: 0%;
+  }
+}
+
+.insights{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.key-insights h3{
+  margin-top: 80px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.insights .insight-number{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.insight-number h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 152, 0);
+  width: 200px;
+  height: 200px;
+  border: rgb(255, 152, 0) 5px;
+  border-radius: 50%;
+  padding: 10px;
+  align-items: center;
+}
+.navigation-button{
+  transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
+}
+.service-arrow-icon i{
+  transform: translateX(0%);
+  transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
+}
+.navigation-button:hover{
+  background-color: rgb(255, 152, 0);
+}
+.navigation-button:hover .service-arrow-icon i{
+  transform: translateX(50%);
 }
