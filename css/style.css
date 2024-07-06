@@ -1358,6 +1358,20 @@ menu button
 menu
 
 ------------------------------------------- */
+.main-menu-quote{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  display: block;
+  color: white;
+}
+.main-menu-hashtag{
+  position: absolute;
+  top: 53%;
+  left: 63%;
+  display: block;
+  color: white;
+}
 .mil-menu-frame {
   position: fixed;
   z-index: 9;
@@ -1436,6 +1450,20 @@ menu
 @media screen and (max-width: 1200px) {
   .mil-menu-frame .mil-menu-right-frame {
     display: none;
+  }
+  .main-menu-quote{
+    position: absolute;
+    top: 77%;
+    left: 38.5%;
+    display: block;
+    color: white;
+  }
+  .main-menu-hashtag{
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    display: block;
+    color: white;
   }
 }
 @media screen and (max-height: 800px) {
@@ -1540,6 +1568,20 @@ menu
 @media screen and (max-width: 992px) {
   .mil-main-menu ul li a {
     font-size: 26px;
+  }
+  .main-menu-quote{
+    position: absolute;
+    top: 77%;
+    left: 28vw;
+    display: block;
+    color: white;
+  }
+  .main-menu-hashtag{
+    position: absolute;
+    top: 80%;
+    left: 32.5vw;
+    display: block;
+    color: white;
   }
 }
 .mil-main-menu ul li a:before {
@@ -1950,6 +1992,32 @@ lines
 dodecahedron
 
 ------------------------------------------- */
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+  
+}
+@keyframes rotationServices {
+  from {transform: rotate(0deg) scale(0.6);}
+  to {transform: rotate(360deg) scale(0.6);}
+  
+}
+.svg-homepage{
+  position: absolute;
+  display: block;
+  float: right;
+  top: 0px;
+  left:50%;
+  opacity: 0.6;
+  stroke: rgba(255, 255, 255, 0.5);
+  fill: none;
+  stroke-miterlimit:10;
+  animation-name: rotation;
+  animation-delay: 8s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
 .mil-animation-frame {
   width: 100%;
   height: 100vh;
@@ -1958,6 +2026,30 @@ dodecahedron
   -webkit-animation: jump 10s linear infinite;
           animation: jump 10s linear infinite;
   pointer-events: none;
+}
+.svg-service-bottom{
+  position: absolute;
+  display: block;
+  top: -80px;
+  left: 850px;
+}
+.svg-service-top{
+  position: absolute;
+  display: block;
+  top: -100px;
+  left: 750px;
+}
+.svg-service-top, .svg-service-bottom{
+  opacity: 0.6;
+  stroke: rgba(255, 255, 255, 0.5);
+  fill: none;
+  transform: scale(0.6);
+  stroke-miterlimit:10;
+  animation-name: rotationServices;
+  animation-delay: 8s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
 }
 
 .mil-animation {
@@ -1991,6 +2083,9 @@ dodecahedron
 @media screen and (max-width: 1400px) {
   .mil-position-2 {
     display: none;
+  }
+  .svg-homepage{
+    top: 80px;
   }
 }
 
@@ -2183,6 +2278,10 @@ dodecahedron
 about
 
 ------------------------------------------- */
+.big-bold-text{
+  font-weight: 600;
+  font-size: 35px;
+}
 .mil-about-quote {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4350,9 +4449,12 @@ Milestones
   border-radius: 6px;
   color: black;
 }
-/* .timeline-content h2{
-  color: white;
-} */
+.timeline-end{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -4377,13 +4479,22 @@ Milestones
   }
 
 /* Make sure all circles are at the same spot */
-  .timeline-left::after, .right::after {
-    left: 15px;
+  .timeline-left::after {
+    left: 18px;
   }
+  /* .right::after{
+
+  } */
 
 /* Make all right containers behave like the left ones */
   .timeline-right {
-    left: 0%;
+    left: 35px;
+  }
+  .timeline-end{
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
   }
 }
 
@@ -4400,6 +4511,16 @@ Milestones
   color: white;
   justify-content: center;
   align-items: center;
+}
+.insight-quote{
+  text-align: center;
+}
+.insight-quote p{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
 }
 .insights .insight-number{
   color: white;
