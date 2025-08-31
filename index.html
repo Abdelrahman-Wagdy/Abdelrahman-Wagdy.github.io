@@ -1,630 +1,1246 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
-    <!-- fancybox css -->
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-    <!-- ashley scss -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>WAGDY Holding</title>
-    <link rel="shortcut icon" href="img/WH icone.jpg" type="image/x-icon">
-
-</head>
-
-<body>
-
-    <!-- wrapper -->
-    <div class="mil-wrapper" id="top">
-
-        <!-- cursor -->
-        <div class="mil-ball">
-            <span class="mil-icon-1">
-                <svg viewBox="0 0 128 128">
-                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
-                </svg>
-            </span>
-            <div class="mil-more-text">More</div>
-            <div class="mil-choose-text">Сhoose</div>
-        </div>
-        <!-- cursor end -->
-
-        <!-- preloader -->
-        <div class="mil-preloader">
-            <div class="mil-preloader-animation">
-                <div class="mil-pos-abs mil-animation-1">
-                    <p class="mil-h3 mil-muted">Innovating</p>
-                    <p class="mil-h3 mil-muted mil-thin">for</p>
-                    <p class="mil-h3 mil-muted mil-thin">Generations</p>
-                </div>
-                <div class="mil-pos-abs mil-animation-2">
-                    <div class="mil-reveal-frame">
-                        <p class="mil-reveal-box"></p>
-                        <p class="mil-h3 mil-muted mil-thin">WAGDY Holding</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- preloader end -->
-
-        <!-- scrollbar progress -->
-        <div class="mil-progress-track">
-            <div class="mil-progress"></div>
-        </div>
-        <!-- scrollbar progress end -->
-
-        <!-- menu -->
-        <div class="mil-menu-frame">
-            <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">WAGDY Holding</a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            <!-- frame clone end -->
-            <div class="container">
-                <div class="mil-menu-content">
-                    <div class="row">
-                        <nav class="mil-main-menu" id="swupMenu">
-                            <ul>
-                                <li><a href="index.html">Homepage</a></li>
-                                <li><a href="portfolio.html">Our Brands</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                            </ul>
-                        </nav>
-                        <h5 class="main-menu-quote">Innovate. Inspire. Impact.</h6>
-                        <h5 class="main-menu-hashtag">#We_Are_Wagdy</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- menu -->
+    <title>AbdelRahman Wagdy - Senior Test Automation Engineer</title>
+    <meta name="description" content="Senior Test Automation Engineer with 3.5+ years at Instabug & Vodafone. Expert in mobile, API testing, and CI/CD automation. Available for freelance projects.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <!-- curtain -->
-        <div class="mil-curtain"></div>
-        <!-- curtain end -->
+        :root {
+            --primary: #1e3c72;
+            --secondary: #2a5298;
+            --accent: #00d4aa;
+            --success: #28a745;
+            --warning: #ffc107;
+            --text: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            top: -50%;
+            left: -50%;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-20px, -20px) rotate(1deg); }
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background: #00b894;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 212, 170, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        /* Awards Banner */
+        .awards-banner {
+            background: linear-gradient(45deg, var(--warning), #ff8c00);
+            color: var(--text);
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 600;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        /* Main Content */
+        main {
+            margin-top: 0;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: var(--bg-light);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-category {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: var(--bg-light);
+            color: var(--text);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-tag.highlight {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .skill-tag:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
+        
+        /* Projects Section */
+        .projects {
+            background: var(--bg-light);
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .project-header {
+            padding: 2rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: var(--white);
+        }
+        
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-tech {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        .project-body {
+            padding: 2rem;
+        }
+        
+        .project-impact {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid var(--success);
+        }
+        
+        .impact-metric {
+            font-weight: bold;
+            color: var(--success);
+        }
+        
+        /* Experience Section */
+        .experience-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .timeline-marker {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .timeline-marker::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            background: var(--primary);
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item:last-child .timeline-marker::after {
+            display: none;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .company {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .job-title {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .job-period {
+            background: var(--accent);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .achievement-highlight {
+            background: linear-gradient(45deg, rgba(40, 167, 69, 0.1), rgba(0, 212, 170, 0.1));
+            border-left: 4px solid var(--success);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+        }
+        
+        .cta-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+            }
+            
+            .timeline-marker {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: var(--white);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">AbdElRahman Wagdy</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
 
-        <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">WAGDY Holding</a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Back to top</span>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Senior Test Automation Engineer</h1>
+                <p class="subtitle">Delivering 85% faster testing cycles with enterprise-grade reliability</p>
+                <p>3.5+ years at <strong>Instabug & Vodafone VOIS</strong> • Expert in Mobile, API & CI/CD Testing • Available for Premium Projects</p>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        💬 Hire Me Now
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        🚀 View My Work
                     </a>
                 </div>
             </div>
+        </section>
+
+        <!-- Awards Banner -->
+        <div class="awards-banner">
+            🏆 2x "BEST SQUAD MEMBER" AWARD WINNER • Recognized for Outstanding Technical Innovation at Instabug
         </div>
-        <!-- frame end -->
 
-        <!-- content -->
-        <div class="mil-content">
-            <div id="swupMain" class="mil-main-transition">
-
-                <!-- banner -->
-                <section class="mil-banner mil-dark-bg">
-                    <div class="mi-invert-fix">
-                        <div class="mil-animation-frame">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 360 288" style="enable-background:new 0 0 360 288;" xml:space="preserve" class="svg-homepage">
-                                    <g>
-                                        <g>
-                                            <polygon class="st0" points="166.4,23.4 299.2,178.6 234.7,158.1 		"/>
-                                            <polygon class="st0" points="106.7,229.7 299.2,178.6 235.6,157.7 		"/>
-                                            <polyline class="st0" points="164.1,20.4 148.5,71.2 103,231.8 		"/>
-                                        </g>
-                                    </g>
-                            </svg>
-                        </div>
-
-                        <div class="mil-gradient"></div>
-
-                        <div class="container">
-                            <div class="mil-banner-content mil-up">
-
-                                <h1 class="mil-muted mil-mb-60">Designing <span class="mil-thin">a Better</span><br> World <span class="mil-thin">Today</span></h1>
-                                <div class="row">
-                                    <div class="col-md-7 col-lg-5">
-
-                                        <p class="mil-light-soft mil-mb-60">Welcome to our world of endless imagination and boundless creativity. Together, let's embark on a remarkable journey where dreams become tangible realities.</p>
-
-                                    </div>
-                                </div>
-
-                                <a href="#services" class="mil-button mil-arrow-place mil-btn-space">
-                                    <span>What we do</span>
-                                </a>
-
-                                <a href="portfolio.html" class="mil-link mil-muted mil-arrow-place">
-                                    <span>View works</span>
-                                </a>
-
-                                <div class="mil-circle-text">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
-                                        <defs>
-                                            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
-                                        </defs>
-                                        <circle cx="150" cy="100" r="75" fill="none" />
-                                        <g>
-                                            <use xlink:href="#circlePath" fill="none" />
-                                            <text style="letter-spacing: 6.5px">
-                                                <!-- circle text -->
-                                                <textPath xlink:href="#circlePath">Scroll down - Scroll down - </textPath>
-                                            </text>
-                                        </g>
-                                    </svg>
-                                      
-                                    <a href="#about" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
-                                </div>
-
-                            </div>
-                        </div>
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">85%</span>
+                        <div class="stat-label">Testing Time Reduction<br>(20 days → 3-5 days)</div>
                     </div>
-                </section>
-                <!-- banner end -->
-
-                <!-- about -->
-                <section id="about">
-                    <div class="container mil-p-120-30">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-lg-6 col-xl-5">
-
-                                <div class="mil-mb-90">
-                                    <h2 class="mil-up mil-mb-60">Inside <br>Our <span class="mil-thin">World</span></h2>
-                                    <p class="mil-up mil-mb-30 intro-text">Welcome to WAGDY Holding, where ambition meets innovation. Explore our cutting-edge solutions and join us on our journey to reshape the future.</p>
-                                    <p class="mil-up mil-mb-30"><span class="big-bold-text">Vision</span> to redefine excellence with a touch of elegance. We aspire to be the benchmark of business innovation and sophistication, with every venture reflecting our solid commitment to quality, creativity, and ambition. We aim to attract and inspire people, set new goals for success while enjoying the journey.</p>
-                                    <p class="mil-up mil-mb-60"><span class="big-bold-text">Mission</span> to build a portfolio of exceptional businesses across various sectors and countries. Through strategic partnerships and visionary leadership, we operate multiple brands internationally, aiming for sustainable growth and encouraging innovation. Guided by a lifetime of ethical values, we are dedicated to making a positive impact on the world with each venture, while leaving a legacy of greatness and optimism.</p>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-5">
-
-                                <div class="mil-about-photo mil-mb-90">
-                                    <div class="mil-lines-place"></div>
-                                    <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
-                                        <img src="img/photo/3.jpg" alt="img" class="mil-scale" data-value-1="1" data-value-2="1.2">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">90%</span>
+                        <div class="stat-label">API Performance Boost<br>(45 mins → 4 mins)</div>
                     </div>
-                </section>
-                <!-- about end -->
-
-                <!-- services -->
-                <section id="services" class="mil-dark-bg">
-                    <div class="mi-invert-fix">
-                        <div class="mil-animation-frame">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 360 288" style="enable-background:new 0 0 360 288;" xml:space="preserve" class="svg-service-top">
-                                    <g>
-                                        <g>
-                                            <polygon class="st0" points="166.4,23.4 299.2,178.6 234.7,158.1 		"/>
-                                            <polygon class="st0" points="106.7,229.7 299.2,178.6 235.6,157.7 		"/>
-                                            <polyline class="st0" points="164.1,20.4 148.5,71.2 103,231.8 		"/>
-                                        </g>
-                                    </g>
-                            </svg>
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 360 288" style="enable-background:new 0 0 360 288;" xml:space="preserve" class="svg-service-bottom">
-                                    <g>
-                                        <g>
-                                            <polygon class="st0" points="166.4,23.4 299.2,178.6 234.7,158.1 		"/>
-                                            <polygon class="st0" points="106.7,229.7 299.2,178.6 235.6,157.7 		"/>
-                                            <polyline class="st0" points="164.1,20.4 148.5,71.2 103,231.8 		"/>
-                                        </g>
-                                    </g>
-                            </svg>
-                        </div>
-                        <div class="container mil-p-120-0">
-                            <div class="row">
-                                <div class="col-lg-10">
-                                    <span class="mil-h1 mil-suptitle mil-muted mil-suptitle-right mil-up">What we do</span>
-                                </div>
-                            </div>
-
-                            <div class="mil-complex-text justify-content-center mil-up mil-mb-15">
-
-                                <p class="mil-muted mil-center">The best of organic, brought to life: A range of products for every taste</p>
-
-                            </div>
-                            <div class="mil-complex-text justify-content-center mil-up mil-mb-15">
-
-                                <p class=" mil-muted mil-center">From farm to fantastic: Organic ingredients, crafted with care</p>
-
-                            </div>
-
-                            <div class="row mil-services-grid m-0">                        
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-
-                                    <a class="mil-service-card-sm mil-up">
-                                        <h5 class="mil-muted mil-mb-30">Harvest and <br>Manufacture</h5>
-                                    </a>
-
-                                </div>
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-
-                                    <a class="mil-service-card-sm mil-up">
-                                        <h5 class="mil-muted mil-mb-30">Export</h5>
-                                    </a>
-
-                                </div>
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-
-                                    <a class="mil-service-card-sm mil-up">
-                                        <h5 class="mil-muted mil-mb-30">Collaborate <br>and Trade</h5>
-                                    </a>
-
-                                </div>
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-                                    <a class="mil-service-card-sm mil-up navigation-button" href="portfolio.html">
-                                        <h5 class="mil-muted">Checkout our products <span class="service-arrow-icon"><i class="fas fa-arrow-right"></i></span></h5>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">4</span>
+                        <div class="stat-label">Platforms Mastered<br>(Android, iOS, Flutter, RN)</div>
                     </div>
-                </section>
-                <!-- services end -->
-
-                
-                <!-- Quote -->
-                <section class="mil-soft-bg">
-                    <div class="container mil-p-120-120">
-                        <h2 class="mil-center mil-up mil-mb-60">Family Business<span class="mil-thin">Quote:</span></h2>
-
-                        <div class="row mil-relative justify-content-center">
-                            <div class="col-lg-8">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="mil-quote-icon mil-up">
-                                    <path d="M 13.5 10 A 8.5 8.5 0 0 0 13.5 27 A 8.5 8.5 0 0 0 18.291016 25.519531 C 17.422273 29.222843 15.877848 31.803343 14.357422 33.589844 C 12.068414 36.279429 9.9433594 37.107422 9.9433594 37.107422 A 1.50015 1.50015 0 1 0 11.056641 39.892578 C 11.056641 39.892578 13.931586 38.720571 16.642578 35.535156 C 19.35357 32.349741 22 27.072581 22 19 A 1.50015 1.50015 0 0 0 21.984375 18.78125 A 8.5 8.5 0 0 0 13.5 10 z M 34.5 10 A 8.5 8.5 0 0 0 34.5 27 A 8.5 8.5 0 0 0 39.291016 25.519531 C 38.422273 29.222843 36.877848 31.803343 35.357422 33.589844 C 33.068414 36.279429 30.943359 37.107422 30.943359 37.107422 A 1.50015 1.50015 0 1 0 32.056641 39.892578 C 32.056641 39.892578 34.931586 38.720571 37.642578 35.535156 C 40.35357 32.349741 43 27.072581 43 19 A 1.50015 1.50015 0 0 0 42.984375 18.78125 A 8.5 8.5 0 0 0 34.5 10 z" fill="#000000" />
-                                </svg>
-
-                                <div class="swiper-container mil-reviews-slider">
-                                    <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                        <p class="mil-text-xl mil-up">Rooted in tradition, inspired by passion, and driven by a shared commitment, our family business is more than just a venture—it's our legacy in action.</p>
-                                        <h5 class="mil-up mil-mb-10">Wagdy member</h5>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                <!-- Quote end -->
-
-                <!-- Key insights -->
-                <div class="insights">
-                    <div class="container mil-p-0-120">
-                        <div class="row insights">
-                            <div class="col-lg-4">
-                                <div class="row">
-                                    <div class="key-insights mil-mb-30">
-                                        <h3>Partnerships</h3>
-                                    </div>
-                                    <div class="insight-number mil-mb-10">
-                                        <h1>45+</h1>
-                                    </div>
-                                    <div class="insight-quote">
-                                        <p>That help us improve global connections</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="row">
-                                    <div class="key-insights mil-mb-30">
-                                        <h3>Factories</h3>
-                                    </div>
-                                    <div class="insight-number mil-mb-10">
-                                        <h1>3</h1>
-                                    </div>
-                                    <div class="insight-quote">
-                                        <p>To serve our customers in different sectors</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="row">
-                                    <div class="key-insights mil-mb-30">
-                                        <h3>Brands</h3>
-                                    </div>
-                                    <div class="insight-number mil-mb-10">
-                                        <h1>7</h1>
-                                    </div>
-                                    <div class="insight-quote">
-                                        <p>Innovate, unique and stellar</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">3.5+</span>
+                        <div class="stat-label">Years Enterprise<br>Experience</div>
                     </div>
                 </div>
-                <!-- key insights end -->
-
-                <!-- Path to Success -->
-                <section>
-                    <div class="container mil-p-120-60">
-                        <div class="row align-items-center mil-mb-30">
-                            <div class="col-lg-6 mil-mb-30">
-                                <h3 class="mil-up">Path to Success:</h3>
-                            </div>
-                        </div>
-
-                        <div class="timeline">
-                            <div class="timeline-container timeline-left">
-                              <div class="timeline-content">
-                                <h3>2018</h3>
-                                <p>WAGDY family started investing in agricultural lands.</p>
-                              </div>
-                            </div>
-                            <div class="timeline-container timeline-right">
-                              <div class="timeline-content">
-                                <h3>2020</h3>
-                                <p>WAGDY family starting planting jojoba farm.</p>
-                              </div>
-                            </div>
-                            <div class="timeline-container timeline-left">
-                                <div class="timeline-content">
-                                  <h3>2022</h3>
-                                  <p>First harvest of the date palm land.</p>
-                                </div>
-                            </div>
-                          <div class="timeline-container timeline-right">
-                            <div class="timeline-content">
-                              <h3>2022</h3>
-                              <p>The birth of the 7 Dates brand.</p>
-                            </div>
-                          </div>
-                          <div class="timeline-container timeline-left">
-                            <div class="timeline-content">
-                              <h3>2024</h3>
-                              <p>The birth of Intrinsic & Elexium.</p>
-                            </div>
-                          </div>
-                          <div class="timeline-container timeline-right">
-                            <div class="timeline-content">
-                              <h3>2024</h3>
-                              <p>The birth of Wagdy Farms & Croccante.</p>
-                            </div>
-                          </div>
-                          <div class="timeline-container timeline-left">
-                            <div class="timeline-content">
-                              <h3>2024</h3>
-                              <p>WAGDY Holding became the only global representative for 2 well known Egyptian brands "SOHO'S" & "Al-Arrab</p>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="timeline-end">
-                        <h3>This is not it</h3>
-                      </div>
-                    </div>
-                </section>
-                <!-- Path to Success end -->
-
-
-                <!-- footer -->
-                <footer class="mil-dark-bg">
-                    <div class="mi-invert-fix">
-                        <div class="container mil-p-120-60">
-                            <div class="row justify-content-between">
-                                <div class="col-md-4 col-lg-4 mil-mb-60">
-
-                                    <div class="mil-muted mil-logo mil-up mil-mb-30">WAGDY Holding</div>
-
-                                    <p class="mil-light-soft mil-up mil-mb-30">Creating Unparalleled Success</p>
-                                </div>
-                                <div class="col-md-7 col-lg-6">
-                                    <div class="row justify-content-end">
-                                        <div class="col-md-6 col-lg-7">
-
-                                            <nav class="mil-footer-menu mil-mb-60">
-                                                <ul>
-                                                    <li class="mil-up mil-active">
-                                                        <a href="index.html">Home</a>
-                                                    </li>
-                                                    <li class="mil-up">
-                                                        <a href="portfolio.html">Portfolio</a>
-                                                    </li>
-                                                    <li class="mil-up">
-                                                        <a href="contact.html">Contact</a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-
-                                        </div>
-                                        <div class="col-md-6 col-lg-5">
-                                            <h5 class="wagdy-hashtag">#We_Are_Wagdy</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-between flex-sm-row-reverse">
-                                <div class="col-md-7 col-lg-6">
-
-                                    <div class="row justify-content-between">
-
-                                        <div class="col-md-6 col-lg-5 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-up mil-mb-30">Egypt</h6>
-
-                                            <p class="mil-light-soft mil-up">Sheraton heliopolis, Cairo</p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-4 col-lg-6 mil-mb-60">
-
-                                    <div class="mil-vert-between">
-                                        <div class="mil-mb-30">
-                                            <ul class="mil-social-icons mil-up">
-                                                <li><a href="https://www.facebook.com/people/Wagdy-Holding/61561367096546/?mibextid=LQQJ4d" target="_blank" class="social-icon"> <i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="https://www.instagram.com/wagdyholding/?igsh=MTBqZW9hZnI5NTd2bQ%3D%3D&utm_source=qr" target="_blank" class="social-icon"> <i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="https://www.linkedin.com/company/wagdy-holding/" target="_blank" class="social-icon"> <i class="fab fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <p class="mil-light-soft mil-up">© Copyright 2024 - WAGDY. All Rights Reserved.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- footer end -->
-
-                <!-- hidden elements -->
-                <div class="mil-hidden-elements">
-                    <div class="mil-dodecahedron">
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
-                    </svg>
-
-                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
-                    </svg>
-                </div>
-                <!-- hidden elements end -->
-
             </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p>Award-winning automation engineer with a proven track record of revolutionizing testing processes</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Why Choose Me?</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--success); font-size: 1.2rem;">✓</span>
+                                <strong>Enterprise Experience:</strong> Proven track record at leading tech companies
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--success); font-size: 1.2rem;">✓</span>
+                                <strong>Award Recognition:</strong> 2x Best Squad Member for technical excellence
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--success); font-size: 1.2rem;">✓</span>
+                                <strong>Cross-Platform Expert:</strong> All major mobile platforms + web + API
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--success); font-size: 1.2rem;">✓</span>
+                                <strong>Innovation Focus:</strong> Revolutionary framework development and optimization
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--bg-light); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Quick Facts</h3>
+                        <p><strong>Education:</strong> Mechatronics Engineering (Excellent with Honors)</p>
+                        <p><strong>Location:</strong> Cairo, Egypt (Available for remote work)</p>
+                        <p><strong>Languages:</strong> English (Fluent), Arabic (Native), German (Conversational)</p>
+                        <p><strong>Availability:</strong> Ready for immediate project start</p>
+                        <p><strong>Specialization:</strong> Quality-first automation solutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Expertise</h2>
+                    <p>Comprehensive skill set covering the entire testing automation ecosystem</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category fade-in">
+                        <h3>🔧 Automation Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Selenium</span>
+                            <span class="skill-tag highlight">Appium</span>
+                            <span class="skill-tag highlight">Cypress</span>
+                            <span class="skill-tag">TestNG</span>
+                            <span class="skill-tag">Cucumber</span>
+                            <span class="skill-tag">RestAssured</span>
+                            <span class="skill-tag">Pytest</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category fade-in">
+                        <h3>📱 Mobile Testing</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Android Native</span>
+                            <span class="skill-tag highlight">iOS Native</span>
+                            <span class="skill-tag highlight">Flutter</span>
+                            <span class="skill-tag highlight">React Native</span>
+                            <span class="skill-tag">Cross-Platform</span>
+                            <span class="skill-tag">Performance Testing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category fade-in">
+                        <h3>⚙️ CI/CD & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Jenkins</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Git/GitLab</span>
+                            <span class="skill-tag">AWS/Azure</span>
+                            <span class="skill-tag">Pipeline Automation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category fade-in">
+                        <h3>💻 Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Java</span>
+                            <span class="skill-tag highlight">Python</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">Swift</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category fade-in">
+                        <h3>🔍 Specialized Testing</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">API Testing</span>
+                            <span class="skill-tag">Performance Testing</span>
+                            <span class="skill-tag">Security Testing</span>
+                            <span class="skill-tag">Database Testing</span>
+                            <span class="skill-tag">MITMproxy</span>
+                            <span class="skill-tag">OpenCV</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category fade-in">
+                        <h3>📊 Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">TestMo</span>
+                            <span class="skill-tag">TestRail</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Allure Reports</span>
+                            <span class="skill-tag">ExtentReports</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Projects</h2>
+                    <p>Real-world solutions that deliver measurable business impact</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3 class="project-title">Revolutionary SDK Testing Framework</h3>
+                            <p class="project-tech">Appium • MITMproxy • TestMo • Pytest</p>
+                        </div>
+                        <div class="project-body">
+                            <p>Architected groundbreaking testing framework integrating network-level testing with automated test management for Instabug's SDK.</p>
+                            <div class="project-impact">
+                                <p><span class="impact-metric">🚀 85% Reduction</span> in testing cycle time</p>
+                                <p><span class="impact-metric">⏱️ 20 days → 3-5 days</span> testing timeline</p>
+                                <p><span class="impact-metric">🏆 Award Winner</span> - Best Squad Member recognition</p>
+                            </div>
+                            <p><strong>Innovation:</strong> Network-level validation with comprehensive reporting automation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3 class="project-title">Enterprise Mobile Automation Suite</h3>
+                            <p class="project-tech">Appium • TestNG • Cucumber • Jenkins</p>
+                        </div>
+                        <div class="project-body">
+                            <p>Cross-platform mobile testing framework supporting all major platforms with parallel execution and comprehensive reporting.</p>
+                            <div class="project-impact">
+                                <p><span class="impact-metric">📱 4 Platforms</span> - Android, iOS, Flutter, React Native</p>
+                                <p><span class="impact-metric">⚡ Parallel Execution</span> across multiple devices</p>
+                                <p><span class="impact-metric">📊 Automated Reporting</span> with Allure integration</p>
+                            </div>
+                            <p><strong>Features:</strong> Real device testing, CI/CD integration, comprehensive test coverage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3 class="project-title">High-Performance API Optimization</h3>
+                            <p class="project-tech">RestAssured • Jenkins • Performance Testing</p>
+                        </div>
+                        <div class="project-body">
+                            <p>Transformed critical backend testing performance through architectural redesign and optimization strategies.</p>
+                            <div class="project-impact">
+                                <p><span class="impact-metric">🔥 90% Improvement</span> in main scenarios</p>
+                                <p><span class="impact-metric">⏲️ 45 mins → 4 mins</span> execution time</p>
+                                <p><span class="impact-metric">📈 67% Overall Boost</span> in test suite performance</p>
+                            </div>
+                            <p><strong>Achievement:</strong> Revolutionary performance gains while maintaining test coverage</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://github.com/Abdelrahman-Wagdy" class="btn btn-primary">
+                        📂 View All Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Professional Experience</h2>
+                    <p>Enterprise-level expertise with measurable impact and recognition</p>
+                </div>
+                
+                <div class="experience-timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker">
+                            <span style="color: white; font-size: 1.2rem;">🏢</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div>
+                                    <div class="company">Vodafone VOIS</div>
+                                    <div class="job-title">Senior Testing Engineer</div>
+                                    <div style="color: var(--text-light); font-size: 0.9rem;">Cairo, Egypt</div>
+                                </div>
+                                <div class="job-period">Current Role</div>
+                            </div>
+                            
+                            <div class="achievement-highlight">
+                                <h4 style="color: var(--success); margin-bottom: 0.5rem;">🚀 CI/CD Automation Leadership</h4>
+                                <p>Spearheaded Jenkins automation initiatives, implementing sophisticated pipelines for mobile and API testing with comprehensive reporting systems.</p>
+                            </div>
+                            
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>Advanced Mobile Automation:</strong> Deployed Appium-based testing with parallel execution
+                                </li>
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>API Testing Excellence:</strong> Created comprehensive REST API frameworks with automated reporting
+                                </li>
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>Process Innovation:</strong> Streamlined enterprise testing workflows and best practices
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker">
+                            <span style="color: white; font-size: 1.2rem;">🏆</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div>
+                                    <div class="company">Instabug</div>
+                                    <div class="job-title">Automation Software Testing Engineer</div>
+                                    <div style="color: var(--text-light); font-size: 0.9rem;">Cairo, Egypt</div>
+                                </div>
+                                <div class="job-period">May 2022 - Present</div>
+                            </div>
+                            
+                            <div class="achievement-highlight">
+                                <h4 style="color: var(--success); margin-bottom: 0.5rem;">🏆 2x Best Squad Member Award Winner</h4>
+                                <p>Recognized for exceptional technical innovation and team impact across multiple quarters.</p>
+                            </div>
+                            
+                            <div class="achievement-highlight">
+                                <h4 style="color: var(--success); margin-bottom: 0.5rem;">⚡ Revolutionary Framework Development</h4>
+                                <p>Built SDK testing framework reducing cycle time by 85% (20 days → 3-5 days) while maintaining enterprise quality.</p>
+                            </div>
+                            
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>Cross-Platform Excellence:</strong> Led testing across Android, iOS, Flutter, React Native
+                                </li>
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>API Performance Optimization:</strong> Improved critical test execution by 90% (45 mins → 4 mins)
+                                </li>
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>Team Leadership:</strong> Mentored junior engineers and managed testing initiatives
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker">
+                            <span style="color: white; font-size: 1.2rem;">💼</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div>
+                                    <div class="company">Freelance</div>
+                                    <div class="job-title">Software Testing Engineer</div>
+                                    <div style="color: var(--text-light); font-size: 0.9rem;">Remote</div>
+                                </div>
+                                <div class="job-period">Jan 2020 - Apr 2022</div>
+                            </div>
+                            
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>Client Success:</strong> Successfully delivered testing for Weqaya and Abnaa Sinai websites
+                                </li>
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>Quality Assurance:</strong> Comprehensive end-to-end testing and validation
+                                </li>
+                                <li style="margin-bottom: 0.5rem; padding-left: 1rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                                    <strong>Foundation Building:</strong> Established automation testing expertise and client relationships
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" style="background: var(--bg-light); padding: 80px 0;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Services I Provide</h2>
+                    <p>Comprehensive testing solutions that ensure your software works flawlessly</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Mobile App Testing</h3>
+                        <p>Complete testing across all platforms - Android, iOS, Flutter, React Native. Automated frameworks with real device testing and performance optimization.</p>
+                        <div style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                            <strong>Rate:</strong> $50-75/hour
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">🔧</div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">API & Backend Testing</h3>
+                        <p>Comprehensive API testing with performance optimization. RestAssured frameworks, database validation, and integration testing with proven performance improvements.</p>
+                        <div style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                            <strong>Rate:</strong> $45-65/hour
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">⚙️</div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">CI/CD Integration</h3>
+                        <p>Jenkins pipeline development, automated testing integration, and deployment automation. Complete DevOps testing solutions with comprehensive reporting.</p>
+                        <div style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                            <strong>Rate:</strong> $60-85/hour
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">🏗️</div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Framework Development</h3>
+                        <p>Custom test automation frameworks designed for your specific needs. Scalable, maintainable solutions that grow with your business requirements.</p>
+                        <div style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                            <strong>Rate:</strong> $70-100/hour
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">👥</div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Team Training</h3>
+                        <p>Comprehensive training programs for your QA team. Best practices, tool training, and process optimization based on enterprise experience.</p>
+                        <div style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                            <strong>Rate:</strong> $80-120/hour
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">QA Strategy Consulting</h3>
+                        <p>Strategic QA planning and process optimization. Leverage my enterprise experience to build robust quality assurance practices for your organization.</p>
+                        <div style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                            <strong>Rate:</strong> $100-150/hour
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials/Results Section -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Results That Speak</h2>
+                    <p>Real impact delivered through innovative testing solutions</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: linear-gradient(45deg, rgba(40, 167, 69, 0.1), rgba(0, 212, 170, 0.1)); padding: 2rem; border-radius: 15px; border-left: 5px solid var(--success);">
+                        <div style="font-size: 2.5rem; color: var(--success); margin-bottom: 1rem;">85%</div>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Testing Cycle Reduction</h4>
+                        <p>"AbdelRahman's innovative SDK testing framework transformed our development process, reducing our testing cycle from 20 days to just 3-5 days while maintaining zero production bugs."</p>
+                        <div style="margin-top: 1rem; font-weight: 600; color: var(--primary);">- Instabug Engineering Team</div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(45deg, rgba(30, 60, 114, 0.1), rgba(42, 82, 152, 0.1)); padding: 2rem; border-radius: 15px; border-left: 5px solid var(--primary);">
+                        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">90%</div>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Performance Improvement</h4>
+                        <p>"The API testing optimization delivered incredible results - our critical test scenarios now run in 4 minutes instead of 45 minutes. This has revolutionized our development workflow."</p>
+                        <div style="margin-top: 1rem; font-weight: 600; color: var(--primary);">- Backend Development Team</div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(45deg, rgba(255, 193, 7, 0.1), rgba(255, 140, 0, 0.1)); padding: 2rem; border-radius: 15px; border-left: 5px solid var(--warning);">
+                        <div style="font-size: 2.5rem; color: #ff8c00; margin-bottom: 1rem;">2x</div>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Award Recognition</h4>
+                        <p>"Consistently delivered exceptional results and innovation. AbdelRahman's technical expertise and team leadership earned recognition as Best Squad Member for two consecutive quarters."</p>
+                        <div style="margin-top: 1rem; font-weight: 600; color: var(--primary);">- Instabug Management</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p style="margin-bottom: 2rem; opacity: 0.9;">Ready to revolutionize your testing processes? I'm available for premium projects that demand enterprise-level quality and innovation.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:wagdy.abdelrahman@gmail.com" style="color: var(--accent);">wagdy.abdelrahman@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <a href="tel:+201009999063" style="color: var(--accent);">+201009999063</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Location</strong><br>
+                                Cairo, Egypt<br>
+                                <small style="opacity: 0.8;">Available for remote work</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div>
+                                <strong>LinkedIn</strong><br>
+                                <a href="https://linkedin.com/in/abdelrahmanwagdy" style="color: var(--accent);">linkedin.com/in/abdelrahmanwagdy</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-section">
+                        <h3>Ready to Get Started?</h3>
+                        <p>I'm currently accepting select freelance projects. Let's discuss how I can help you achieve 85% faster testing cycles with enterprise-grade reliability.</p>
+                        
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <a href="mailto:wagdy.abdelrahman@gmail.com?subject=Freelance Project Inquiry&body=Hi AbdelRahman,%0D%0A%0D%0AI'm interested in discussing a testing project. Here are the details:%0D%0A%0D%0AProject Type: [Mobile/API/Web/Framework Development]%0D%0ATimeline: %0D%0ABudget Range: %0D%0ASpecific Requirements: %0D%0A%0D%0ALet's schedule a call to discuss further.%0D%0A%0D%0ABest regards," class="btn btn-primary">
+                                💬 Start Project Discussion
+                            </a>
+                            <a href="https://linkedin.com/in/abdelrahmanwagdy" class="btn btn-secondary">
+                                🤝 Connect on LinkedIn
+                            </a>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                            <h4 style="margin-bottom: 1rem;">Quick Response Guarantee</h4>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">I respond to all project inquiries within 24 hours. Premium clients receive priority scheduling and dedicated project support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/abdelrahmanwagdy" target="_blank" title="GitHub">
+                    <span style="font-size: 1.2rem;">📂</span>
+                </a>
+                <a href="https://linkedin.com/in/abdelrahmanwagdy" target="_blank" title="LinkedIn">
+                    <span style="font-size: 1.2rem;">💼</span>
+                </a>
+                <a href="mailto:wagdy.abdelrahman@gmail.com" title="Email">
+                    <span style="font-size: 1.2rem;">📧</span>
+                </a>
+            </div>
+            <p>&copy; 2025 AbdelRahman Wagdy. All rights reserved.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Senior Test Automation Engineer • Available for Freelance Projects</p>
         </div>
-        <!-- content -->
-    </div>
-    <!-- wrapper end -->
+    </footer>
 
-    <!-- jQuery js -->
-    <script src="js/plugins/jquery.min.js"></script>
-    <!-- swup js -->
-    <script src="js/plugins/swup.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/plugins/swiper.min.js"></script>
-    <!-- fancybox js -->
-    <script src="js/plugins/fancybox.min.js"></script>
-    <!-- gsap js -->
-    <script src="js/plugins/gsap.min.js"></script>
-    <!-- scroll smoother -->
-    <script src="js/plugins/smooth-scroll.js"></script>
-    <!-- scroll trigger js -->
-    <script src="js/plugins/ScrollTrigger.min.js"></script>
-    <!-- scroll to js -->
-    <script src="js/plugins/ScrollTo.min.js"></script>
-    <!-- ashley js -->
-    <script src="js/main.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
 
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add hover effects to service cards
+        document.querySelectorAll('.services > .container > div:last-child > div').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+                this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
+            });
+        });
+
+        // Dynamic year in footer
+        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} AbdelRahman Wagdy. All rights reserved.`;
+
+        // Add loading animation to CTA buttons
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (this.href && this.href.includes('mailto:')) {
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<span class="loading"></span> Opening Email...';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                    }, 2000);
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, rgba(30, 60, 114, 0.95), rgba(42, 82, 152, 0.95))';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, var(--primary), var(--secondary))';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
 </body>
-
 </html>
